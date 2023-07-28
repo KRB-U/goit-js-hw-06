@@ -11,7 +11,7 @@ const arr = [];
 
 ingredients.forEach((item) => {
   const unmarkedLi = document.createElement("li");
-  console.dir(unmarkedLi);
+  // console.dir(unmarkedLi);
   unmarkedLi.classList.add("item");
   unmarkedLi.textContent = item;
   arr.push(unmarkedLi);
@@ -36,6 +36,7 @@ Ullist.append(...arr);
 //     .join("");
 
 //   // listIngredients.insertAdjacentHTML("beforeend", itemsIngredientsEl);
+
 //   listIngredients.append(...itemsIngredientsEl);
 // }
 // createItemEl(ingredients);
