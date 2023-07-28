@@ -1,6 +1,6 @@
 const inpArea = document.querySelector("#font-size-control");
 
-console.dir(inpArea);
+// console.dir(inpArea);
 
 const spn = document.querySelector("#text");
 
