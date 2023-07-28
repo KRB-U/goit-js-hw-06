@@ -1,10 +1,10 @@
 const list = document.querySelector("#categories");
-console.dir(list);
+// console.dir(list);
 
 console.log(`Number of categories: ${list.childElementCount}`);
 
 const arr = [...list.children];
-console.dir(arr);
+// console.dir(arr);
 
 arr.forEach((el) => {
   const [elemTitle, elemUl] = el.children;
