@@ -3,22 +3,16 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-console.log(getRandomHexColor());
-// let clr = "";
-// console.log(clr);
+// console.log(getRandomHexColor());
 
-// const body = documnet.body;
+const body = document.querySelector("body");
+const putColor = document.querySelector(".color");
+const BtnChgColor = document.querySelector(".change-color");
 
-const putColor = document.querySelector("color");
-console.dir(putColor);
-const chgColor = document.querySelector("change-color");
+function handlerChangeColor() {
+  let clr = getRandomHexColor();
+  body.style.backgroundColor = clr;
+  putColor.textContent = clr;
+}
 
-// function handlerChangeColor(evt) {
-//   clr = evt.getRandomHexColor();
-
-// console.log(clr);
-// }
-
-chgColor.addEventListener("click", handlerChangeColor);
-
-// putColor.addEventListener("click", handlerChangeColor);
+BtnChgColor.addEventListener("click", handlerChangeColor);
