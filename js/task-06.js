@@ -7,7 +7,7 @@ inputObject.addEventListener("blur", handlerValueCheck);
 
 function handlerValueCheck(evt) {
   console.dir(evt);
-  if (evt.target.value.length === Number(validValue)) {
+  if (evt.currentTarget.value.length === Number(validValue)) {
     inputObject.classList = "valid";
   } else {
     inputObject.classList = "invalid";
