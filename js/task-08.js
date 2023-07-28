@@ -1,4 +1,9 @@
 const form = document.querySelector(".login-form");
+const objUser = {
+  email: "",
+  password: "",
+};
+
 // console.dir(form);
 console.dir(form);
 form.addEventListener("submit", handlerMangmntForm);
@@ -14,7 +19,11 @@ function handlerMangmntForm(evt) {
 
   if (form.email.value === "" || form.password.value === "") {
     alert("Заповніть усі поля ");
+    return;
   } else {
-    console.log(email.value, password.value);
+    objUser.email = email.value;
+    objUser.password = password.value;
+    console.log(objUser);
   }
+  form.reset();
 }
