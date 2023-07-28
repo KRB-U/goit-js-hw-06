@@ -1,4 +1,5 @@
 let counterValue = 0;
+
 const spanEl = document.querySelector("#value");
 
 const minus = spanEl.previousElementSibling;
