@@ -1,6 +1,6 @@
 const inpArea = document.querySelector("#font-size-control");
 
-// console.dir(inpArea);
+console.dir(inpArea);
 
 const spn = document.querySelector("#text");
 
@@ -9,7 +9,7 @@ const spn = document.querySelector("#text");
 inpArea.addEventListener("input", changeSize);
 
 function changeSize(evt) {
-  spn.style.fontSize = evt.currentTarget.value + "px";
+  spn.style.fontSize = evt.target.value + "px";
 
   // console.dir(evt.currentTarget);
 }
