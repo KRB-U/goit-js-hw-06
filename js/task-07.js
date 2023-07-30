@@ -3,6 +3,7 @@ const inpArea = document.querySelector("#font-size-control");
 console.dir(inpArea);
 
 const spn = document.querySelector("#text");
+spn.style.fontSize = `${inpArea.value}px`;
 
 // console.dir(spn);
 
